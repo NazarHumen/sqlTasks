@@ -11,7 +11,7 @@ CREATE TABLE Books (
     Publisher VARCHAR(255),
     Pages INT,
     Format VARCHAR(20),
-    DatePublished DATE DEFAULT DATE_FORMAT(CURRENT_DATE, '%m %d %Y'),
+    DatePublished DATE DEFAULT CURRENT_DATE,
     Edition INT,
     Theme VARCHAR(255),
     Category VARCHAR(255)
